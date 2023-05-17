@@ -1,0 +1,118 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #aaff39;
+    --light-color: #ece8e1;
+    --dark-color: #444;
+}
+@font-face{
+    font-family: "Valo";
+    src: url("./fonts/Valorant\ Font.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Adam-Bold";
+    src: url("./fonts/Adam-Bold.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Adam-Light";
+    src: url("./fonts/Adam-Light.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Adam-Medium";
+    src: url("./fonts/Adam-Medium.ttf") format("truetype");
+}
+
+body{
+    overflow: hidden;
+}
+.logo{
+    width: 60px;
+    transform: scaleX(1.2);
+}
+.landing-page{
+    /* background-color: #222; */
+    background: linear-gradient(110deg, #222 60%, var(--primary-color) 40%);
+
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rem;
+    gap: 2rem;
+}
+
+/* .landing-page::before{
+    content: '';
+    background: url("./images/bg.jpg") center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+} */
+img{
+    width: 100%;
+}
+.landing-page .navbar{
+    display: flex;
+    padding: 2rem 0;
+}
+
+.landing-page .content{
+    display: flex;
+    flex-direction: row;
+    gap: 4.5rem;
+}
+
+.landing-page .content .left{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.landing-page .content .right h1{
+    font-family: "Adam-Bold";
+    font-size: 10rem;
+    transform: rotateZ(110deg) translateX(150px);
+}
+
+@supports((text-stroke: 2px black) or (-webkit-text-stroke: 2px black)) {
+    .right h1 {
+        color: transparent;
+        -webkit-text-stroke: 2px #444;
+		text-stroke: 2px #555;
+        text-shadow: none;
+    }
+}
+
+.landing-page .content .left .top-section{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 15rem;
+    /* width: 50%; */
+    height: 100%;
+}
+.landing-page .content .top-section #header{
+    font-family: "Adam-Bold";
+    font-size: 5rem;
+}
+.landing-page .content .top-section p{
+    font-family: "Adam-Medium";
+}
+
+.landing-page .content .bottom-section {
+    color: #fff;
+}
+
+#arc{
+    color: var(--primary-color);
+}
