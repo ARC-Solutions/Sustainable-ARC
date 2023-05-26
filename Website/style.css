@@ -7,7 +7,7 @@
 :root{
     --primary-color: #aaff39;
     --light-color: #ece8e1;
-    --dark-color: #444;
+    --dark-color: #222;
 }
 @font-face{
     font-family: "Valo";
@@ -25,9 +25,8 @@
     font-family: "Adam-Medium";
     src: url("./fonts/Adam-Medium.ttf") format("truetype");
 }
-
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .logo{
     width: 60px;
@@ -43,39 +42,49 @@ body{
     flex-direction: column;
     padding: 0 10rem;
     gap: 2rem; */
-    position: fixed;
-    background-color: #222;
+    position: relative;
+    background-color: var(--dark-color);
+    width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-width: 100vw;
-    min-height: 100vh;
-    overflow: hidden;
+    justify-content:center;
+    align-items: start;
 }
 
 img{
     width: 100%;
 }
 
+.icons{
+    transform: scale(1.3);
+}
+.line{
+    background-color: #fff;
+    width: 200px;
+    height: 3px;
+}
 
 .landing-page .content{
     position: absolute;
     display: flex;
     flex-direction: column;
+    gap: 4rem;
     width: 40%;
+    padding-top: 40rem;
+    padding-left: 7rem;
 }
 
 .landing-page .content .top-section{
     display: flex;
     flex-direction: column;
     color: #fff;
-    padding: 15rem 0 0 7rem;
     gap: 2rem;
     height: 100%;
 }
 .landing-page .content .top-section #header{
     font-family: "Adam-Bold";
-    font-size: 7rem;
+    font-size: 7.4rem;
 }
 .landing-page .content .top-section p{
     font-family: "Adam-Medium";
@@ -85,6 +94,9 @@ img{
 
 .landing-page .content .bottom-section {
     color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 #arc{
@@ -92,5 +104,15 @@ img{
 }
 .video{
 width: 100%;
+height: 100%;
+}
 
+#members{
+    background-image: url("./images/bg_white.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding: 10rem
 }
