@@ -8,6 +8,7 @@
     --primary-color: #aaff39;
     --light-color: #ece8e1;
     --dark-color: #222;
+    --red-color: #ff4655;
 }
 @font-face{
     font-family: "Valo";
@@ -32,6 +33,10 @@ body{
     width: 60px;
     transform: scaleX(1.2);
 }
+img{
+    width: 100%;
+    height: 100%;
+}
 .landing-page{
     /* background:linear-gradient(110deg, rgba(3,3,3,0.5) 60%, var(--primary-color) 40%), url("./images/ffflurry.svg");
     height: 100vh;
@@ -45,7 +50,7 @@ body{
     position: relative;
     background-color: var(--dark-color);
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -56,7 +61,7 @@ img{
     width: 100%;
 }
 
-.icons{
+.socials{
     transform: scale(1.3);
 }
 .line{
@@ -71,8 +76,7 @@ img{
     flex-direction: column;
     gap: 4rem;
     width: 40%;
-    padding-top: 40rem;
-    padding-left: 7rem;
+    padding: 35rem 0 10rem 8rem;
 }
 
 .landing-page .content .top-section{
@@ -84,11 +88,11 @@ img{
 }
 .landing-page .content .top-section #header{
     font-family: "Adam-Bold";
-    font-size: 7.4rem;
+    font-size: 5rem;
 }
 .landing-page .content .top-section p{
     font-family: "Adam-Medium";
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
 }
 
@@ -103,16 +107,79 @@ img{
     color: var(--primary-color);
 }
 .video{
-width: 100%;
-height: 100%;
+   height: 100%;
+   width: 109%;
 }
 
-#members{
-    background-image: url("./images/bg_white.png");
-    background-position: center;
-    background-repeat: no-repeat;
+#nikola{
+    position: relative;
+    background-image: url("./images/backgrounds/NikolaBG.jpg");
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    padding: 10rem
+    background-repeat: no-repeat;
+        background-attachment: fixed;
+    background-position: 100% 90%;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 10rem 8rem 0 8rem;
+    display: flex;
+    overflow: hidden;
 }
+
+#nikola .left{ 
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 50vw;
+    height: 100%;
+    border-left: 1px solid #222;
+}
+#nikola .left img {
+    width: 35rem;
+}
+#nikola .right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+    width: 50vw;
+    padding: .5rem 1rem 2rem 5rem;
+}
+#nikola .right h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-family: "Valo";
+    color: #111;
+}
+
+#nikola .right #special{
+    color: var(--red-color);
+}
+
+#nikola .right p {
+    font-family: "Adam-Bold";
+    font-size: 2rem;
+}
+
+#nikola .right .icons{
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#nikola .right .icon{
+    width: 45px;
+    height: 45px;
+}
+
+.unreal{
+    width: 60px !important;
+    height: 60px !important;
+}
+#nikola .right .icons .line{
+    background-color: #111 !important;
+    width: 40px;
+}
+
+
