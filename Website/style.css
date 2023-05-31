@@ -140,10 +140,10 @@ img{
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     height: 100%;
     width: 50vw;
-    padding: .5rem 1rem 2rem 5rem;
+    padding: 1.5rem 1rem 2rem 5rem;
 }
 #nikola .right h1{
     font-size: 6rem;
@@ -162,7 +162,7 @@ img{
 }
 
 #nikola .right .icons{
-    margin-top: 8rem;
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     gap: 1rem;
