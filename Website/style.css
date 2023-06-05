@@ -111,9 +111,10 @@ img{
    width: 109%;
 }
 
+/* nikola */
 #nikola{
     position: relative;
-    background-image: url("./images/backgrounds/NikolaBG.jpg");
+    background-image: url("./images/backgrounds/white_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
         background-attachment: fixed;
@@ -182,4 +183,72 @@ img{
     width: 40px;
 }
 
+/* nippon */
+#nippon{
+    position: relative;
+    background-image: url("./images/backgrounds/black_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+        background-attachment: fixed;
+    background-position: 100% 90%;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 10rem 8rem 0 8rem;
+    display: flex;
+    overflow: hidden;
+}
+
+#nippon .right{ 
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 50vw;
+    height: 100%;
+    border-right: 1px solid #ededed;
+}
+#nippon .right img {
+    width: 40rem;
+}
+#nippon .left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%;
+    width: 50vw;
+    padding: 1.5rem 1rem 2rem 5rem;
+}
+#nippon .left h1{
+    font-size: 6.3rem;
+    text-transform: uppercase;
+    font-family: "Valo";
+    color: #eee;
+}
+
+#nippon .left #special{
+    color: var(--primary-color);
+}
+
+#nippon .left p {
+    font-family: "Adam-Bold";
+    font-size: 2rem;
+    color: #eee;
+}
+
+#nippon .left .icons{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#nippon .left .icon{
+    width: 45px;
+    height: 45px;
+}
+
+#nippon .left .icons .line{
+    background-color: #eee !important;
+    width: 40px;
+}
 
