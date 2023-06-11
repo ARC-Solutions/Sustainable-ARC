@@ -28,6 +28,7 @@
 }
 body{
     overflow-x: hidden;
+    background-color: var(--dark-color);
 }
 .logo{
     width: 60px;
@@ -112,7 +113,7 @@ img{
 }
 
 /* nikola */
-#nikola{
+#white{
     position: relative;
     background-image: url("./images/backgrounds/white_bg.jpg");
     background-size: cover;
@@ -126,7 +127,7 @@ img{
     overflow: hidden;
 }
 
-#nikola .left{ 
+#white .left{ 
     display: flex;
     justify-content: center;
     align-self: flex-end;
@@ -134,42 +135,43 @@ img{
     height: 100%;
     border-left: 1px solid #222;
 }
-#nikola .left img {
+#white .left img {
     width: 35rem;
 }
-#nikola .right {
+#white .right {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 3rem;
     height: 100%;
     width: 50vw;
-    padding: 1.5rem 1rem 2rem 5rem;
+    padding: 5rem 1rem 2rem 5rem;
 }
-#nikola .right h1{
+#white .right h1{
     font-size: 6rem;
     text-transform: uppercase;
     font-family: "Valo";
     color: #111;
 }
 
-#nikola .right #special{
+#white .right #special{
     color: var(--red-color);
 }
 
-#nikola .right p {
+#white .right p {
     font-family: "Adam-Bold";
     font-size: 2rem;
 }
 
-#nikola .right .icons{
+#white .right .icons{
     margin-top: 5rem;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-#nikola .right .icon{
+#white .right .icon{
     width: 45px;
     height: 45px;
 }
@@ -178,13 +180,13 @@ img{
     width: 60px !important;
     height: 60px !important;
 }
-#nikola .right .icons .line{
+#white .right .icons .line{
     background-color: #111 !important;
     width: 40px;
 }
 
 /* nippon */
-#nippon{
+#black{
     position: relative;
     background-image: url("./images/backgrounds/black_bg.jpg");
     background-size: cover;
@@ -198,7 +200,7 @@ img{
     overflow: hidden;
 }
 
-#nippon .right{ 
+#black .right{ 
     display: flex;
     justify-content: center;
     align-self: flex-end;
@@ -206,49 +208,65 @@ img{
     height: 100%;
     border-right: 1px solid #ededed;
 }
-#nippon .right img {
-    width: 40rem;
+#black .right img {
+    width: 35rem;
 }
-#nippon .left {
+#nippon{
+    transform: rotateY(180deg);
+}
+#black .left {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 3rem;
     height: 100%;
     width: 50vw;
-    padding: 1.5rem 1rem 2rem 5rem;
+    padding: 5rem 1rem 2rem 5rem;
 }
-#nippon .left h1{
+#black .left h1{
     font-size: 6.3rem;
     text-transform: uppercase;
     font-family: "Valo";
     color: #eee;
 }
 
-#nippon .left #special{
+#black .left #special{
     color: var(--primary-color);
 }
 
-#nippon .left p {
+#black .left p {
     font-family: "Adam-Bold";
     font-size: 2rem;
     color: #eee;
 }
 
-#nippon .left .icons{
+#black .left .icons{
     margin-top: 5rem;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-#nippon .left .icon{
+#black .left .icon{
     width: 45px;
     height: 45px;
 }
 
-#nippon .left .icons .line{
+#black .left .icons .line{
     background-color: #eee !important;
     width: 40px;
+}
+
+
+/* preview section */
+
+.preview{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/backgrounds/pewview-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
 }
 
