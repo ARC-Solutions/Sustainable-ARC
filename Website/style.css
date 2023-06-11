@@ -191,7 +191,7 @@ img{
     background-image: url("./images/backgrounds/black_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-        background-attachment: fixed;
+     background-attachment: fixed;
     background-position: 100% 90%;
     min-width: 100vw;
     min-height: 100vh;
