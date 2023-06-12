@@ -12,19 +12,19 @@
 }
 @font-face{
     font-family: "Valo";
-    src: url("./fonts/Valorant\ Font.ttf") format("truetype");
+    src: url("https://github.com/ARC-Solutions/Sustainable-ARC/blob/Website/Fonts/Valorant%20Font.ttf") format("truetype");
 }
 @font-face{
     font-family: "Adam-Bold";
-    src: url("./fonts/Adam-Bold.ttf") format("truetype");
+    src: url("https://github.com/ARC-Solutions/Sustainable-ARC/blob/Website/Fonts/Adam-Bold.ttf") format("truetype");
 }
 @font-face{
     font-family: "Adam-Light";
-    src: url("./fonts/Adam-Light.ttf") format("truetype");
+    src: url("https://github.com/ARC-Solutions/Sustainable-ARC/blob/Website/Fonts/Adam-Light.ttf") format("truetype");
 }
 @font-face{
     font-family: "Adam-Medium";
-    src: url("./fonts/Adam-Medium.ttf") format("truetype");
+    src: url("https://github.com/ARC-Solutions/Sustainable-ARC/blob/Website/Fonts/Adam-Medium.ttf") format("truetype");
 }
 body{
     overflow-x: hidden;
