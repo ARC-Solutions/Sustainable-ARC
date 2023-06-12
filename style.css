@@ -1,0 +1,272 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #aaff39;
+    --light-color: #ece8e1;
+    --dark-color: #222;
+    --red-color: #ff4655;
+}
+@font-face{
+    font-family: "Valo";
+    src: url("./fonts/Valorant\ Font.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Adam-Bold";
+    src: url("./fonts/Adam-Bold.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Adam-Light";
+    src: url("./fonts/Adam-Light.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Adam-Medium";
+    src: url("./fonts/Adam-Medium.ttf") format("truetype");
+}
+body{
+    overflow-x: hidden;
+    background-color: var(--dark-color);
+}
+.logo{
+    width: 60px;
+    transform: scaleX(1.2);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.landing-page{
+    /* background:linear-gradient(110deg, rgba(3,3,3,0.5) 60%, var(--primary-color) 40%), url("./images/ffflurry.svg");
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rem;
+    gap: 2rem; */
+    position: relative;
+    background-color: var(--dark-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+}
+
+img{
+    width: 100%;
+}
+
+.socials{
+    transform: scale(1.3);
+}
+.line{
+    background-color: #fff;
+    width: 200px;
+    height: 3px;
+}
+
+.landing-page .content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 40%;
+    padding: 35rem 0 10rem 8rem;
+}
+
+.landing-page .content .top-section{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 2rem;
+    height: 100%;
+}
+.landing-page .content .top-section #header{
+    font-family: "Adam-Bold";
+    font-size: 5rem;
+}
+.landing-page .content .top-section p{
+    font-family: "Adam-Medium";
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.landing-page .content .bottom-section {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#arc{
+    color: var(--primary-color);
+}
+.video{
+   height: 100%;
+   width: 109%;
+}
+
+/* nikola */
+#white{
+    position: relative;
+    background-image: url("./images/backgrounds/white_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+        background-attachment: fixed;
+    background-position: 100% 90%;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 10rem 8rem 0 8rem;
+    display: flex;
+    overflow: hidden;
+}
+
+#white .left{ 
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 50vw;
+    height: 100%;
+    border-left: 1px solid #222;
+}
+#white .left img {
+    width: 35rem;
+}
+#white .right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    height: 100%;
+    width: 50vw;
+    padding: 5rem 1rem 2rem 5rem;
+}
+#white .right h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-family: "Valo";
+    color: #111;
+}
+
+#white .right #special{
+    color: var(--red-color);
+}
+
+#white .right p {
+    font-family: "Adam-Bold";
+    font-size: 2rem;
+}
+
+#white .right .icons{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#white .right .icon{
+    width: 45px;
+    height: 45px;
+}
+
+.unreal{
+    width: 60px !important;
+    height: 60px !important;
+}
+#white .right .icons .line{
+    background-color: #111 !important;
+    width: 40px;
+}
+
+/* nippon */
+#black{
+    position: relative;
+    background-image: url("./images/backgrounds/black_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-attachment: fixed;
+    background-position: 100% 90%;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 10rem 8rem 0 8rem;
+    display: flex;
+    overflow: hidden;
+}
+
+#black .right{ 
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 50vw;
+    height: 100%;
+    border-right: 1px solid #ededed;
+}
+#black .right img {
+    width: 35rem;
+}
+#nippon{
+    transform: rotateY(180deg);
+}
+#black .left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%;
+    width: 50vw;
+    padding: 5rem 1rem 2rem 5rem;
+}
+#black .left h1{
+    font-size: 6.3rem;
+    text-transform: uppercase;
+    font-family: "Valo";
+    color: #eee;
+}
+
+#black .left #special{
+    color: var(--primary-color);
+}
+
+#black .left p {
+    font-family: "Adam-Bold";
+    font-size: 2rem;
+    color: #eee;
+}
+
+#black .left .icons{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#black .left .icon{
+    width: 45px;
+    height: 45px;
+}
+
+#black .left .icons .line{
+    background-color: #eee !important;
+    width: 40px;
+}
+
+
+/* preview section */
+
+.preview{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/backgrounds/pewview-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
